@@ -1,5 +1,5 @@
 ## Regexp Examples
-----------------------------------------------------------------------------------------------
+### Use in Sublime Text 2
 
 localhost
 localhost:3000
@@ -12,7 +12,7 @@ anoth-er.cool-domain
 anoth-er.cool-domain:80
 anoth-er.cool-domain:8000
 
-antés-lãrech.com # <= the new domains to come...
+antés-lãrech.com # <= the new domains to come (with accents and -maybe- ascii caracters too)...
 antés-lãrech.com:22
 antés-lãrech.com:3333
 
@@ -36,8 +36,8 @@ http://192.168.1.330:1234:8080/
 ----------------------------------------------------------------------------------------------
 
 #### TODOs:
-* 1) Parse for this => http://192.168.1.330:1234:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553
-* 2) Replace normal matchers to return named-matchers like this <:prococol><:local|tts><:subdomains><:domain><:port><:path><:params><:anchor><:whatelse>
+* 1) Parse for this => ```http://192.168.1.330:1234:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553```
+* 2) Replace normal matchers to return named-matchers like this ```<:prococol><:local|tts><:subdomains><:domain><:port><:path><:params><:anchor><:whatelse>```
 
 ----------------------------------------------------------------------------------------------
 
@@ -51,4 +51,4 @@ http://192.168.1.330:1234:8080/
 ----------------------------------------------------------------------------------------------
 
 #### [1] TODO:
-* Test. These regexp is not yet working 100% as needed (v120527-a01.03a)
+* Test. These regexp is not yet working 100% as needed (as in ```v120527-a02```)
