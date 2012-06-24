@@ -12,7 +12,7 @@ anoth-er.cool-domain
 anoth-er.cool-domain:80
 anoth-er.cool-domain:8000
 
-# the new domains to come (with accents and -maybe- ascii caracters too)
+###### the new domains to come (with accents and -maybe- ascii caracters too)
 antés-lãrech.com
 antés-lãrech.com:22
 antés-lãrech.com:3333
