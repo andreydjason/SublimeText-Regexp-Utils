@@ -12,43 +12,49 @@ anoth-er.cool-domain
 anoth-er.cool-domain:80
 anoth-er.cool-domain:8000
 
-antés-lãrech.com # <= the new domains to come (with accents and -maybe- ascii caracters too)...
+# the new domains to come (with accents and -maybe- ascii caracters too)
+antés-lãrech.com
 antés-lãrech.com:22
 antés-lãrech.com:3333
 
 1.2.3.4
-1.2.3.4:1
-1.2.3.4:12
+1.2.3.4:80
 1.2.3.4:123
 1.2.3.4:1234
 
 127.0.0.1
 127.0.0.1:80
 127.0.0.1:1234
-192.168.1.330
-192.168.1.330:80
-192.168.1.330:1234
 
-http://192.168.1.330:1234/
-http://192.168.1.330:1234:80/
-http://192.168.1.330:1234:8080/
+http://192.168.1.330/
+https://192.168.1.330:1234/
+
+ftp://192.168.1.330:1234/
+ssh://192.168.1.330:1234/
+git://192.168.1.330:1234/
+
+https://192.168.1.330:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553
 
 ----------------------------------------------------------------------------------------------
 
 #### TODOs:
 * 1) Parse for this => ```http://192.168.1.330:1234:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553```
 * 2) Replace normal matchers to return named-matchers like this ```<:prococol><:local|tts><:subdomains><:domain><:port><:path><:params><:anchor><:whatelse>```
+* 3) Improve this regex
 
 ----------------------------------------------------------------------------------------------
 
-#### Use Regex (Regular Expressions) to find IPv4 on files
-##### Run this regexp finder:
-* ```( <((http|ftp|ssh|git)?(\:\/\/)?)?:protocol>|(([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|localhost*|[\w\W]*)(\:[0-9]{1,9})*```
+#### Working example
 
-#### Use this "Replacer" and see the result like this:
-* ```$1 - 2: $2 - 3: $3 - 4: $4 - 5: $5 - 6: $6 - 7: $7 - 8: $8 - 9: $9 - 10: $10 - 11: $11```
+#### Use Regex (Regular Expressions) to find IPv4 on files/scripts
+
+##### Run this regexp finder:
+* ```(?<protocol>[http|https|ftp|ssh|git\:\/\/]?)*(?<domain>[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}|[a-Z0-9\-\_\.]?)*(?<port>[\:0-9]{1,9}?)*(?<url>[a-Z0-9\/\-\_\.]?)*(?<query>[a-Z0-9\=\&\%\#\?\/\-\_\.]?)*```
+
+#### Use this "replacer" and see the results (use/test it to understand the results):
+* ```$0 --- $1 --- $2 --- $3 --- $4 --- $5 --- $6 --- $7 --- $8```
 
 ----------------------------------------------------------------------------------------------
 
 #### [1] TODO:
-* Test. These regexp is not yet working 100% as needed (as in ```v120527-a02```)
+* How use named regex be used to show results in Sublime Text ?
