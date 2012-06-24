@@ -1,39 +1,39 @@
 ## Regexp Examples
 ### Use in Sublime Text 2
 
-localhost
-localhost:3000
+```localhost```
+```localhost:3000```
 
-some.domail.local
-some.domail.local:80
-some.domail.local:8080
+```some.domail.local```
+```some.domail.local:80```
+```some.domail.local:8080```
 
-anoth-er.cool-domain
-anoth-er.cool-domain:80
-anoth-er.cool-domain:8000
+```anoth-er.cool-domain```
+```anoth-er.cool-domain:80```
+```anoth-er.cool-domain:8000```
 
-###### the new domains to come (with accents and -maybe- ascii caracters too)
-antés-lãrech.com
-antés-lãrech.com:22
-antés-lãrech.com:3333
+###### exmples of the new domains to come (with accents and -maybe- ascii caracters too)
+```antés-lãrech.com```
+```antés-lãrech.com:22```
+```antés-lãrech.com:3333```
 
-1.2.3.4
-1.2.3.4:80
-1.2.3.4:123
-1.2.3.4:1234
+```1.2.3.4```
+```1.2.3.4:80```
+```1.2.3.4:123```
+```1.2.3.4:1234```
 
-127.0.0.1
-127.0.0.1:80
-127.0.0.1:1234
+```127.0.0.1```
+```127.0.0.1:80```
+```127.0.0.1:1234```
 
-http://192.168.1.330/
-https://192.168.1.330:1234/
+```http://192.168.1.330/```
+```https://192.168.1.330:1234/```
 
-ftp://192.168.1.330:1234/
-ssh://192.168.1.330:1234/
-git://192.168.1.330:1234/
+```ftp://192.168.1.330:1234/```
+```ssh://192.168.1.330:1234/```
+```git://192.168.1.330:1234/```
 
-https://192.168.1.330:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553
+```https://192.168.1.330:8080/app/users/supermind/cool/function?and=0&some=query&here=and&there=213553```
 
 ----------------------------------------------------------------------------------------------
 
